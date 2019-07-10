@@ -17,23 +17,5 @@
         <p>Website moved to <a href="http://nmlimon.ml">http://nmlimon.ml</a>.</p>
       </div>
     </div>
-<script type="dfcc6500546cb043dee9d5ee-text/javascript">
-    snackbarShow()
-    function snackbarShow() {
-    document.getElementById("currentPage").innerText = window.location;
-        var snackBar = document.getElementById("snackbar");
-        snackBar.className = "show";
-        setTimeout(function(){ snackBar.className = snackBar.className.replace("show", ""); }, 3000);
-    }
-        var timeleft = 5,
-            downloadTimer = setInterval(function() {
-                timeleft--, document.getElementById("countdowntimer").textContent = timeleft, timeleft <= 0 && clearInterval(downloadTimer)
-            }, 1e3);
-        document.onmouseover = function() {
-            document.getElementById("error").play()
-        }, setTimeout(function() {
-            window.location.href = "../index.html"
-        }, 5e3)
-    </script>
  </body>
 </html>
